@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="input-range.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="range-wrap">
+			<label class="label-range">
+				<span class="label">Storage: <span class="storageGbAmount">0</span></span>
+				<input value="0" class="storage" type="range" name="storage" min="0" max="1000" step="1">
+			</label>
+			<label class="label-range">
+				<span class="label">Transfer: <span class="transferGbAmount">0</span></span>
+				<input value="0" class="transfer" type="range" name="transfer" min="0" max="1000" step="1">
+			</label>
+		</div>
+		<div class="wrap">
+			<ul class="providers">
+				<li class="providers__item">
+					<div class="providers__info-wrap">
+						<h2 class="providers_name">backblaze</h2>
+						<img class="providers__icon" src="img/backblaze.png" alt="backblaze">
+					</div>
+				</li>
+				<li class="providers__item">
+					<div class="providers__info-wrap">
+						<h2 class="providers_name">bunny</h2>
+						<img class="providers__icon" src="img/bunny.png" alt="bunny">
+					</div>
+					<form class="radio-form bunny-radio-btns">
+						<label class="radio-form__label">
+							HDD
+							<input type="radio" name="bunny-option" value="HDD" checked="checked">
+						</label>
+						<label class="radio-form__label">
+							SSD
+							<input type="radio" name="bunny-option" value="SSD">
+						</label>
+					</form>
+				</li>
+				<li class="providers__item">
+					<div class="providers__info-wrap">
+						<h2 class="providers_name">scaleway</h2>
+						<img class="providers__icon" src="img/scalewaypng.png" alt="scaleway">
+					</div>
+					<form class="radio-form scaleway-radio-btns">
+						<label class="radio-form__label">
+							Multi
+							<input type="radio" name="scaleway-option" value="Multi" checked="checked">
+						</label>
+						<label class="radio-form__label">
+							Single
+							<input type="radio" name="scaleway-option" value="Single">
+						</label>
+					</form>
+				</li>
+				<li class="providers__item">
+					<div class="providers__info-wrap">
+						<h2 class="providers_name">vultr</h2>
+						<img class="providers__icon" src="img/vultr.png" alt="vultr">
+					</div>
+				</li>
+			</ul>
+			<ul class="diagram">
+				<li class="diagram__item">
+					<div class="column backblaze"></div><span class="price">0.00$</span>
+				</li>
+				<li class="diagram__item">
+					<div class="column bunny"></div><span class="price">0.00$</span>
+				</li>
+				<li class="diagram__item">
+					<div class="column scaleway"></div><span class="price">0.00$</span>
+				</li>
+				<li class="diagram__item">
+					<div class="column vultr"></div><span class="price">0.00$</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
